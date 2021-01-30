@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="with-divece-width, initial-scale-1"/> <!--mobility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--mobility-->
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link
@@ -12,8 +12,10 @@
     <script src="https://kit.fontawesome.com/17a0c3fc18.js" crossorigin="anonymous"></script>
     <title>MOGO</title>
   </head>
+
+
   <body>
-    <header class="header">
+    <header class="header header--fixed">
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">Mogo</div>
@@ -30,10 +32,15 @@
               <i class="fas fa-search"></i>
             </a>
           </nav>
+            <button class="nav-toggle active" type="button">
+              <span class="nav-toggle__item">menu</span>
+        </button>
+
         </div>
       </div>
     </header>
 
+<div class="page">
     <div class="intro">
       <div class="container">
         <div class="slider__inner">
@@ -115,23 +122,23 @@
      <div class="container">
         <div class="stat">
           <div class="stat__item">
-            <div class="stat__cont">42</div>
+            <div class="stat__count">42</div>
           <div class="stat__text">Web Design Projects</div>
           </div>
           <div class="stat__item">
-            <div class="stat__cont">123</div>
+            <div class="stat__count">123</div>
           <div class="stat__text">happy client</div>
         </div>
           <div class="stat__item">
-            <div class="stat__cont">15</div>
+            <div class="stat__count">15</div>
           <div class="stat__text">award winner</div>
         </div>
           <div class="stat__item">
-            <div class="stat__cont">99</div>
+            <div class="stat__count">99</div>
           <div class="stat__text">cup of coffee</div>
         </div>
           <div class="stat__item">
-            <div class="stat__cont">24</div>
+            <div class="stat__count">24</div>
           <div class="stat__text">memberrs</div>
         </div>
 
@@ -148,7 +155,7 @@
       
       </div>
       <div class="services">
-       <div class="services__item">
+       <div class="services__item services__item--border">
         <img class="services__icon" 
         src="./images/icons/icon1.png" alt="">
         
@@ -160,7 +167,7 @@
         </div>
       </div>
 
-      <div class="services__item">
+      <div class="services__item services__item--border">
         <img class="services__icon" 
         src="./images/icons/icon2.png" alt="">
 
@@ -172,7 +179,7 @@
         </div>
       </div>
 
-      <div class="services__item">
+      <div class="services__item services__item--border">
         <img class="services__icon"
          src="./images/icons/icon3.png" alt="">
 
@@ -183,48 +190,42 @@
            sed do eiusmod tempor.
         </div>
       </div>
-    </div>
-
-      <hr>
-
-    <div class="services">
       <div class="services__item">
-       <img class="services__icon" 
-       src="./images/icons/icon4.png" alt="">
-       
-       <div class="services__title">SEO</div>
-       <div class="services__text">
-        Lorem ipsum dolor sit amet,
-         consectetur adipiscing elit, 
-        sed do eiusmod tempor.
-       </div>
-     </div>
-
-     <div class="services__item">
-       <img class="services__icon" 
-       src="./images/icons/icon5.png" alt="">
-
-       <div class="services__title">CSS/HTML</div>
-       <div class="services__text">
-        Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit,
+        <img class="services__icon" 
+        src="./images/icons/icon4.png" alt="">
+        
+        <div class="services__title">SEO</div>
+        <div class="services__text">
+         Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, 
          sed do eiusmod tempor.
-       </div>
-     </div>
-
-     <div class="services__item">
-       <img class="services__icon"
-        src="./images/icons/icon6.png" alt="">
-
-        <div class="services__title">DIGITAL</div>
-       <div class="services__text">
+        </div>
+      </div>
+ 
+      <div class="services__item">
+        <img class="services__icon" 
+        src="./images/icons/icon5.png" alt="">
+ 
+        <div class="services__title">CSS/HTML</div>
+        <div class="services__text">
          Lorem ipsum dolor sit amet, 
          consectetur adipiscing elit,
           sed do eiusmod tempor.
-       </div>
-     </div>
-   </div>
-      
+        </div>
+      </div>
+ 
+      <div class="services__item">
+        <img class="services__icon"
+         src="./images/icons/icon6.png" alt="">
+ 
+         <div class="services__title">DIGITAL</div>
+        <div class="services__text">
+          Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit,
+           sed do eiusmod tempor.
+        </div>
+      </div>
+    </div>
     </section>
 
     <section class="section section--devices" >
@@ -260,7 +261,7 @@
       <div> 
          <div class="wedo">
            <div class="wedo__item">
-             <img  class="wedo_img" src="https://i.pinimg.com/originals/4e/a0/1d/4ea01d62c6973c916d4c5fa060a54f13.jpg" alt="">
+             <img  class="wedo_img" src="./images/wedo.jpg" alt="">
            </div>
 
             <div class="wedo__item">
@@ -454,22 +455,22 @@
 
      <div class="logos">
        <div class="logos__item" >
-         <img src="./images/logos/1.png" alt="">
+         <img class="logos__img" src="./images/logos/1.png" alt="">
         </div>
         <div class="logos__item" >
-          <img src="./images/logos/2.png" alt="">
+          <img class="logos__img" src="./images/logos/2.png" alt="">
          </div>
          <div class="logos__item" >
-          <img src="./images/logos/3.png" alt="">
+          <img class="logos__img" src="./images/logos/3.png" alt="">
          </div>
          <div class="logos__item" >
-          <img src="./images/logos/4.png" alt="">
+          <img class="logos__img" src="./images/logos/4.png" alt="">
          </div>
          <div class="logos__item" >
-          <img src="./images/logos/5.png" alt="">
+          <img class="logos__img" src="./images/logos/5.png" alt="">
          </div>
          <div class="logos__item" >
-          <img src="./images/logos/6.png" alt="">
+          <img class="logos__img" src="./images/logos/6.png" alt="">
          </div>
      </div>
 
@@ -840,7 +841,7 @@
          </div>
         </div>
    </footer>
-
+</div>
 
   </body>
 </html>
